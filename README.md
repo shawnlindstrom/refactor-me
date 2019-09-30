@@ -1,7 +1,7 @@
 # A Laravel 6.0 Application with a Few Refactoring Exercises
 
 ## Installation
-After cloning and cd'ing into the repository:
+For the exercise, fork the repo and pull it in locally. Then:
 ```
 composer install
 npm install && npm run dev
@@ -9,6 +9,7 @@ touch database/database.sqlite
 php artisan migrate
 php artisan serve
 ```
+
 ## Objective
 There are a couple of controllers and models as well as routes in web.php and a handful of Blade files. Using your knowledge of Laravel and good practices, refactor them to more closely follow idiomatic Laravel.
 
