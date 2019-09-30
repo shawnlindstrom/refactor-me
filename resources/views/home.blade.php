@@ -14,7 +14,13 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in!<br><br>
+
+                    @if (\App\UserProfile::where('user_id', auth()->user()->id)->first())
+                        <a href="/user/profile/{{ \App\UserProfile::where('user_id', auth()->user()->id)->first()->id }}/show">View Profile</a>
+                    @else
+                        <a href="/user/profile/create">Create Profile</a>
+                    @endif
                 </div>
             </div>
         </div>
