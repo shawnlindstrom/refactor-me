@@ -5,6 +5,7 @@ For the exercise, fork the repo and pull it in locally. Then:
 ```
 composer install
 npm install && npm run dev
+mv .env.example .env
 touch database/database.sqlite
 php artisan migrate
 php artisan serve
